@@ -1,0 +1,21 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#trailBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%
+}
+
+.trailsText {
+    font-family: 'Lobster', cursive;
+    color: var(--old-gold);
+    font-size: 64px;
+    font-weight: 700;
+    margin: 0 30px 0 0;
+}
