@@ -10,7 +10,7 @@ type Props = {
     children: JSX.Element | JSX.Element[]
 }
 
-function Transitions({ children }: Props) {
+function AboutTransition({ children }: Props) {
     return (
         <motion.div
             variants={animationConfig}
@@ -24,4 +24,4 @@ function Transitions({ children }: Props) {
     )
 }
 
-export default Transitions
+export default AboutTransition

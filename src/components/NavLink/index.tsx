@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Text } from '@chakra-ui/react';
 import { Link } from "react-router-dom";
 import { useSpring, animated as an } from '@react-spring/web'
@@ -16,17 +15,18 @@ interface linkData {
 function NavLink({ text, to, hover, newHover, bg, updateColors }: linkData) {
     const [spring, setSpring] = useSpring(
         () => ({
-            from: { opacity: 0.2, y:0},
+            from: { opacity: 0.4, y:0},
         }),
         []
     )
     const onHover = (isHovered:boolean) => {
         setSpring(() => ({
-            opacity: isHovered ? 1 : 0.2,
+            opacity: isHovered ? 1 : 0.4,
             y: isHovered ? -5 : 0,
         }))
     }
     const AnLink = an(Link);
+    // maybe remove the changing colors Issue occurs when navigating directly to the link
     return (
         <AnLink
             to={to}

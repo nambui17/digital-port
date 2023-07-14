@@ -1,45 +1,39 @@
-import { Card, CardBody, Text, SimpleGrid, CardHeader, Heading, Button, CardFooter } from '@chakra-ui/react';
-import { Link } from 'react-router-dom';
+import {
+    Card,
+    CardBody,
+    Text,
+    SimpleGrid,
+    CardHeader,
+    Heading,
+    Button,
+    CardFooter,
+    Box,
+} from '@chakra-ui/react';
+import SingleProject from '../components/SingleProject';
+import allProjects from '../assets/projectData';
 
 function Projects() {
     return (
-        <>
-            <SimpleGrid spacing={4} templateColumns='repeat(auto-fill, minmax(200px, 1fr))'>
-                <Card>
-                    <CardHeader>
-                        <Heading size='md'> Customer dashboard</Heading>
-                    </CardHeader>
-                    <CardBody>
-                        <Text>View a summary of all your customers over the last month.</Text>
-                    </CardBody>
-                    <CardFooter>
-                        <Button>View here</Button>
-                    </CardFooter>
-                </Card>
-                <Card>
-                    <CardHeader>
-                        <Heading size='md'> Customer dashboard</Heading>
-                    </CardHeader>
-                    <CardBody>
-                        <Text>View a summary of all your customers over the last month.</Text>
-                    </CardBody>
-                    <CardFooter>
-                        <Button>View here</Button>
-                    </CardFooter>
-                </Card>
-                <Card>
-                    <CardHeader>
-                        <Heading size='md'> Customer dashboard</Heading>
-                    </CardHeader>
-                    <CardBody>
-                        <Text>View a summary of all your customers over the last month.</Text>
-                    </CardBody>
-                    <CardFooter>
-                        <Button>View here</Button>
-                    </CardFooter>
-                </Card>
+        <Box display={'flex'} justifyContent={'center'}>
+            <SimpleGrid spacing={4} minChildWidth={'120px'} maxHeight='500px'>
+                {allProjects.map(pData => 
+                pData.link ? 
+                <SingleProject
+                    projectTitle={pData.projectTitle}
+                    projectText={pData.projectText}
+                    link={pData.link}
+                    image={pData.image}
+                    projectSummary={pData.projectSummary}
+                /> :
+                <SingleProject
+                projectTitle={pData.projectTitle}
+                projectText={pData.projectText}
+                image={pData.image}
+                projectSummary={pData.projectSummary}
+            />
+                )}
             </SimpleGrid>
-        </>
+        </Box>
     )
 }
 

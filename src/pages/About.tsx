@@ -1,14 +1,14 @@
 import { Image, Box } from '@chakra-ui/react'
-import Transitions from '../transitions/AboutTransition';
+import AboutTransition from '../transitions/AboutTransition';
 
 
 function About() {
     return (
-        <Transitions>
+        <AboutTransition>
             <Box>
-                <Image src='assets/Me.jpg' />
+                <Image src='assets/Me.jpg' boxSize={'150px'} objectFit={'cover'} alt='Nam Bui'/>
             </Box>
-        </Transitions>
+        </AboutTransition>
     )
 }
 

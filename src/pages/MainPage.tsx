@@ -1,10 +1,10 @@
 import { Box, Image } from '@chakra-ui/react'
 import NameAnim from '../components/NameAnim'
-import Transitions from '../transitions/AboutTransition'
+import HomeTransition from '../transitions/HomeTransition'
 
 function MainPage() {
     return (
-        <Transitions>
+        <HomeTransition>
             <Box display={'flex'} justifyContent={'center'}>
                 <Box display='flex' justifyContent={'center'} alignItems={'center'}>
                     <NameAnim />
@@ -17,7 +17,7 @@ function MainPage() {
                     borderRadius={'full'}
                 />
             </Box>
-        </Transitions>
+        </HomeTransition>
     )
 }
 
