@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { SimpleGrid } from '@chakra-ui/react';
+import { SimpleGrid, HStack } from '@chakra-ui/react';
 import NavLink from '../NavLink';
 import './style.css'
 
@@ -39,7 +39,7 @@ function Navbar() {
     ]
     return (
         <nav className='navBar'>
-            <SimpleGrid columns={links.length} spacing={10}>
+            <HStack>
                 {links.map(link =>
                     <NavLink
                         text={link.text}
@@ -51,7 +51,7 @@ function Navbar() {
                         updateColors={updateColors}
                     />
                 )}
-            </SimpleGrid>
+            </HStack>
         </nav>
     )
 }

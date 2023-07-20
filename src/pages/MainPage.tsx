@@ -1,21 +1,18 @@
-import { Box, Image } from '@chakra-ui/react'
+import { Box, VStack, Image } from '@chakra-ui/react'
 import NameAnim from '../components/NameAnim'
 import HomeTransition from '../transitions/HomeTransition'
+import ImageCarousel from '../components/ImageCarousel'
 
 function MainPage() {
     return (
         <HomeTransition>
             <Box display={'flex'} justifyContent={'center'}>
                 <Box display='flex' justifyContent={'center'} alignItems={'center'}>
-                    <NameAnim />
+                    <VStack>
+                        <NameAnim />
+                        <ImageCarousel/>
+                    </VStack>
                 </Box>
-                <Image
-                    boxSize='150px'
-                    objectFit={'cover'}
-                    src='/assets/Me.jpg'
-                    alt='Nam Bui'
-                    borderRadius={'full'}
-                />
             </Box>
         </HomeTransition>
     )
