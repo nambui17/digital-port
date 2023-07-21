@@ -46,19 +46,6 @@ function ImageCarousel() {
         delay: 1000,
         ref: springApi
     })
-    const springs = useSpring({
-        from: {
-            strokeDashoffset: 120,
-        },
-        to: {
-            strokeDashoffset: 0,
-        },
-        config: {
-            duration: 11000,
-        },
-        loop: true,
-        ref: springApi,
-    })
 
     useLayoutEffect(() => {
         springApi.start()
