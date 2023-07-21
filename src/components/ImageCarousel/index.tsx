@@ -1,6 +1,6 @@
 import { useState, useLayoutEffect } from 'react'
 import { Image } from '@chakra-ui/react'
-import { useSpringRef, animated as anim, useTransition, useSpring } from '@react-spring/web'
+import { useSpringRef, animated as anim, useTransition} from '@react-spring/web'
 
 const images = {
     source: [
