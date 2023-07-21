@@ -1,6 +1,6 @@
 import { useState, useLayoutEffect } from 'react'
 import { Image } from '@chakra-ui/react'
-import { useSpringRef, animated as anim, useTransition} from '@react-spring/web'
+import { useSpringRef, animated as anim, useTransition, useSpring } from '@react-spring/web'
 
 const images = {
     source: [
@@ -45,6 +45,19 @@ function ImageCarousel() {
         },
         delay: 1000,
         ref: springApi
+    })
+    useSpring({
+        from: {
+            strokeDashoffset: 120,
+        },
+        to: {
+            strokeDashoffset: 0,
+        },
+        config: {
+            duration: 11000,
+        },
+        loop: true,
+        ref: springApi,
     })
 
     useLayoutEffect(() => {
