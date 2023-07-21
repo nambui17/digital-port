@@ -1,4 +1,4 @@
-import { Box, VStack, Image } from '@chakra-ui/react'
+import { Box, VStack } from '@chakra-ui/react'
 import NameAnim from '../components/NameAnim'
 import HomeTransition from '../transitions/HomeTransition'
 import ImageCarousel from '../components/ImageCarousel'

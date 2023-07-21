@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { SimpleGrid, HStack } from '@chakra-ui/react';
+import { HStack } from '@chakra-ui/react';
 import NavLink from '../NavLink';
 import './style.css'
 

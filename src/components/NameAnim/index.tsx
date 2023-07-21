@@ -1,5 +1,4 @@
 import { useTrail, animated as anim } from '@react-spring/web'
-import { Box, Image } from '@chakra-ui/react';
 import './style.css'
 
 const items = ['Bùi', 'Phương', 'Nam'];

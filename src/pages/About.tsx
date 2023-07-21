@@ -1,4 +1,4 @@
-import { Image, Box, Grid, GridItem, Text, Divider, Wrap, WrapItem, SimpleGrid } from '@chakra-ui/react'
+import { Image, Grid, GridItem, Text, Divider, Wrap, WrapItem, SimpleGrid } from '@chakra-ui/react'
 import AboutTransition from '../transitions/AboutTransition';
 
 
