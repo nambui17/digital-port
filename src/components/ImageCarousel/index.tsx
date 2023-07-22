@@ -4,12 +4,12 @@ import { useSpringRef, animated as anim, useTransition, useSpring } from '@react
 
 const images = {
     source: [
-        '/assets/MeCacti.jpeg',
-        '/assets/Sunflower.png',
-        '/assets/Cacti.jpeg',
-        '/assets/Bookcase.jpeg',
-        '/assets/Building.jpeg',
-        '/assets/Flowers.jpeg'
+        './assets/MeCacti.jpeg',
+        './assets/Sunflower.png',
+        './assets/Cacti.jpeg',
+        './assets/Bookcase.jpeg',
+        './assets/Building.jpeg',
+        './assets/Flowers.jpeg'
     ],
     alt: [
         'Nam Bui in front of cacti',
