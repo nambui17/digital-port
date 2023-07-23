@@ -20,7 +20,7 @@ const theme = extendTheme({colors});
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
-      <BrowserRouter>
+      <BrowserRouter basename='/digital-port'>
         <App />
       </BrowserRouter>
     </ChakraProvider>

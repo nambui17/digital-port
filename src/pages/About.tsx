@@ -9,7 +9,7 @@ function About() {
                 <Grid templateAreas={'profile text'} gridTemplateColumns={'0.5fr 2.5fr'}>
                     <GridItem area={'profile'} colSpan={1} display={'flex'} justifyContent={'center'}>
                         <WrapItem>
-                            <Image src='./assets/Me.jpg' boxSize={'150px'} objectFit={'cover'} alt='Nam Bui' borderRadius={'md'} border={'2px'}/>
+                            <Image src='./images/Me.jpg' boxSize={'150px'} objectFit={'cover'} alt='Nam Bui' borderRadius={'md'} border={'2px'}/>
                         </WrapItem>
                     </GridItem>
                     <GridItem area={'text'} colSpan={2}>
@@ -30,7 +30,7 @@ function About() {
                     </GridItem>
                     <GridItem area={'milo'} colSpan={1} display={'flex'} justifyContent={'center'}>
                         <WrapItem>
-                            <Image src='./assets/Milo.png' boxSize={'150px'} objectFit={'cover'} alt='Milo Shiba Inu' borderRadius={'md'} border={'2px'}/>
+                            <Image src='./images/Milo.png' boxSize={'150px'} objectFit={'cover'} alt='Milo Shiba Inu' borderRadius={'md'} border={'2px'}/>
                         </WrapItem>
                     </GridItem>
                 </Grid>
